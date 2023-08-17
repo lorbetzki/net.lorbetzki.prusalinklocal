@@ -1,0 +1,48 @@
+{
+    "elements": [
+        { 
+            "type": "ValidationTextBox", 
+            "name": "Hostname",
+            "caption": "enter Hostname or IP of the Prusa Printer" 
+        },
+        { 
+            "type": "ValidationTextBox", 
+            "name": "Apikey",
+            "caption": "enter Apikey" 
+        },
+        { 
+            "type": "NumberSpinner", 
+            "name": "UpdateInterval",
+            "caption": "enter Update intervall",
+            "minimum": 0,
+            "suffix": "seconds" 
+        },
+        {
+            "type": "Label", 
+            "name": "LabelTimerCondition",
+            "caption": "You can define conditions at which the update timer should become active. For example, the update timer only runs when an actuator is switched on."
+
+        },
+        { 
+            "type": "SelectCondition", 
+            "name": "TimerCondition", 
+            "multi": true
+        }
+
+    ],
+    "actions": [
+        {
+            "type": "Button",
+            "name": "reloadData",
+            "caption": "Reload data",
+            "onClick": "PRLL_UpdateData($id);"
+        }
+    ],
+    "status": [
+        {  
+            "code": 201, 
+            "icon": "inactive", 
+            "caption": "Prusa not reachable, is the printer on?" 
+        }
+    ]
+}

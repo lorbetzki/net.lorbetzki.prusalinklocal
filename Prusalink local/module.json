@@ -1,0 +1,12 @@
+{
+    "id": "{4E3990D6-2286-7F32-B3EE-AC8124C0BABA}",
+    "name": "Prusalink local",
+    "type": 3,
+    "vendor": "Prusa",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "PRLL",
+    "url": ""
+}
