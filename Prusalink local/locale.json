@@ -1,8 +1,22 @@
 {
     "translations": {
         "de": {
-            "Translation 1": "Übersetzung 1",
-            "Translation 2": "Übersetzung 2"
+            "Temperature bed": "Temperatur Heizbett",
+            "Temperature nozzle": "Temperatur Düse",
+            "loaded material": "geladenes Material",
+            "printer status": "Druckstatus",
+            "estimated printtime": "geschätze Druckdauer",
+            "filename": "Dateiname",
+            "progress": "Fortschritt",
+            "print time": "Druckzeit",
+            "print time left": "verbleibende Druckzeit",
+            "printing expected to be ready": "Druck voraussichtlich fertig",
+            "enter Hostname or IP of the Prusa Printer": "Hostname oder IP des Prusa Druckers",
+            "enter Apikey": "Api Key des Druckers eingeben",
+            "enter Update interval, 0 means off": "Update Intervall, 0 für ausgeschaltet",
+            "You can define conditions at which the update timer should become active. For example, the update timer only runs when an actuator is switched on.": "Sie können Bedingungen festlegen, unter denen der Aktualisierungs-Timer aktiv werden soll. Zum Beispiel läuft der Update-Timer nur, wenn ein Aktor eingeschaltet ist.",
+            "Reload data": "Daten neu laden",
+            "Prusa not reachable, is the printer on?": "Prusa ist nicht erreichbar, ist er eingeschaltet?"
         }
     }
 }

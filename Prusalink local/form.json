@@ -13,7 +13,7 @@
         { 
             "type": "NumberSpinner", 
             "name": "UpdateInterval",
-            "caption": "enter Update intervall",
+            "caption": "enter Update interval, 0 means off",
             "minimum": 0,
             "suffix": "seconds" 
         },
