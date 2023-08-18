@@ -11,5 +11,6 @@ $DP = [
       ['name',					      $this->Translate('filename'),						  'STRING', '', 20                 ],
       ['completion',		    	$this->Translate('progress'),						  'FLOAT', '~Progress', 20         ],
       ['printTime',			    	$this->Translate('print time'),						'INT', '~UnixTimestampTime', 30  ],
-      ['printTimeLeft',		   	$this->Translate('print time left'),			'INT', '~UnixTimestampTime', 30  ]
+      ['printTimeLeft',		   	$this->Translate('print time left'),			'INT', '~UnixTimestampTime', 30  ],
+      ['printTimeReady',		  $this->Translate('Printing expected to be ready'),			'INT', '~UnixTimestamp', 30  ]
 ];

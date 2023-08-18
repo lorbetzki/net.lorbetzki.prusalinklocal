@@ -103,7 +103,8 @@ require_once __DIR__ . '/../libs/VariableProfileHelper.php';
 						'state' => $Job['state'],
 						'completion' => $Job['progress']['completion'],
 						'printTime' => $Job['progress']['printTime'],
-						'printTimeLeft' => $Job['progress']['printTimeLeft']
+						'printTimeLeft' => $Job['progress']['printTimeLeft'],
+						'printTimeReady' => $Job['progress']['printTimeLeft']
 			];
 
 			foreach ($DPValue as $Ident => $Value)
@@ -115,6 +116,37 @@ require_once __DIR__ . '/../libs/VariableProfileHelper.php';
 				{
 					case 'completion':
 						$Value = $Value * 100;
+					break;
+					case 'estimatedPrintTime':
+						if ($Value)
+						{
+							$Time = gmdate('H:i:s',$Value);
+							$Value = strtotime('01.01.1970 '.$Time);
+						}
+					break;
+					case 'printTime':
+						if ($Value)
+						{
+							$Time = gmdate('H:i:s',$Value);
+							$Value = strtotime('01.01.1970 '.$Time);
+						}
+					break;
+					case 'printTimeLeft':
+						if ($Value)
+						{
+							$Time = gmdate('H:i:s',$Value);
+							$Value = strtotime('01.01.1970 '.$Time);
+						}
+					break;
+					case 'printTimeReady':
+						// convert time for show expected time..
+						if ($Value)
+						{
+							$Time = date('H:i:s',$Value);
+							$TSNow = strtotime(date("M d Y H:i:s"));
+							$TSTime = strtotime('01.01.1970 '.$Time);
+							$Value = $TSTime+$TSNow;
+						}
 					break;
 				}
 				
